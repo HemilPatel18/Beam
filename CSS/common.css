@@ -110,10 +110,11 @@ header .user-menu {
 .sidebar {
     background-color: var(--secondary-color);
     width: 250px;
-    min-height: 93vh;
+    min-height: 90.5vh;
     position: fixed;
     top: 70px;
     left: 0;
+    padding: 5px;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -161,6 +162,7 @@ header .user-menu {
     width: 90%;
     height: 50px;
     cursor: pointer;
+    text-wrap: nowrap;
 
     > i {
         font-size: 40px;
@@ -168,12 +170,12 @@ header .user-menu {
 }
 
 .sidebar .mini-profile {
+    align-self: center;
     display: flex;
     align-items: center;
     gap: 20px;
     border: 2px solid #000;
     border-radius: 10px;
-    margin: 20px 10px;
     width: 90%;
     height: 70px;
     background-color: var(--primary-color);
@@ -181,7 +183,7 @@ header .user-menu {
     font-size: 20px;
     font-weight: 500;
     cursor: pointer;
-    transition: all 0.3s ease-in-out;
+    transition: all 0.5s ease-in-out;
 }
 
 .mini-profile .profile-pic {
@@ -209,9 +211,9 @@ header .user-menu {
 }
 
 .sidebar.close .mini-profile .profile-pic {
-    width: 50px;
-    height: 50px;
-    margin: 0;
+    width: 46px;
+    height: 46px;
+    flex: 0 0 46px;
 }
 
 .sidebar.close .mini-profile .profile-info {
